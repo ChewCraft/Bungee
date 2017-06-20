@@ -4,8 +4,6 @@ stats: [hidden]
 groups:
   ChewLeKitten:
   - admin
-  MrJoCrafter:
-  - admin
 servers:
   SMP:
     motd: '&1Just another BungeeCord - Forced Host'
@@ -23,6 +21,10 @@ servers:
     motd: whitelisted minigames
     address: [hidden]
     restricted: false
+  DontDie:
+    motd: whitelisted death
+    address: [hidden]
+    restricted: false
 timeout: 30000
 player_limit: 100
 listeners:
@@ -33,6 +35,7 @@ listeners:
   - Cubed
   - PVP
   - Minigame
+  - DontDie
   bind_local_address: true
   tab_list: GLOBAL_PING
   query_enabled: false
@@ -42,6 +45,7 @@ listeners:
     smp.chew.pw: SMP
     pvp.chew.pw: PVP
     minigame.chew.pw: Minigame
+    dontdie.chew.pw: DontDie
   max_players: 100
   tab_size: 60
   ping_passthrough: false
